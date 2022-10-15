@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>Add New Person</title>
+</head>
+
+<body>
+    <div class="contentarea">
+        <div class="camera">
+            <video id="video">Video stream not available.</video>
+        </div>
+        <canvas id="canvas"> </canvas>
+    </div>
+
+
+    <input type="file" id="file" name="file">
+
+    <div id="who">
+        <label for="name">Who is?</label>
+        <input type="text" id="name" name="name" required>
+        <button id="save">Save</button>
+    </div>
+    <button id="capture">Capture</button>
+    <div id="response">
+
+    </div>
+</body>
+
+</html>
